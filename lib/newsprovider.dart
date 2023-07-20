@@ -10,7 +10,7 @@ import 'package:provider/provider.dart';
 class NewsProvider with ChangeNotifier {
     final apiKey = 'e3c5e380edb3459b8eda99aa6e8ddc17';
   String _selectedCategory = "General";
-  bool _isLoading = false;
+  bool _isLoading = true;
   List<Articles> _newsList = [];
   List<Articles> _newsListByCategory = [];
   final Dio _dio = Dio();
@@ -60,6 +60,7 @@ class NewsProvider with ChangeNotifier {
   Future<void> fetchNewsByCategory(String category) async {
     final url = 'https://newsapi.org/v2/top-headlines?country=us&category=$category&apiKey=$apiKey';
 
+    _isLoading = true;
     try {
       final response = await Dio().get(url);
 
@@ -73,7 +74,7 @@ class NewsProvider with ChangeNotifier {
     } catch (error) {
       _newsListByCategory = [];
     }
-
+    _isLoading = false;
     notifyListeners();
   }
 

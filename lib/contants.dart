@@ -26,11 +26,11 @@ const categories = [
 ];
 
 const Map<String,String> catimg = {
-  'General': 'https://www.google.com/url?sa=i&url=https%3A%2F%2Ftimesofindia.indiatimes.com%2Findia%2Fbill-for-10-reservation-for-poor-in-general-category-challenged-in-sc%2Farticleshow%2F67470805.cms&psig=AOvVaw25VOCD3Dmj-w2-kF6GF7pi&ust=1689956345545000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCICr34_YnYADFQAAAAAdAAAAABAE',
-  'Business': 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.latentview.com%2Fwp-content%2Fuploads%2F2023%2F04%2Funlocking-the-power-of-data-how-business-analytics-services-can-transform-your-business-featured-img-2.webp&tbnid=LBahQg3pnz0egM&vet=12ahUKEwjp74XR2J2AAxWuqGMGHfpiCqcQMygJegUIARCsAQ..i&imgrefurl=https%3A%2F%2Fwww.latentview.com%2Fcategory%2Fbusiness-analytics%2F&docid=9Vol-eg3KIcREM&w=882&h=576&itg=1&q=Business%20Category%20News%20Image&ved=2ahUKEwjp74XR2J2AAxWuqGMGHfpiCqcQMygJegUIARCsAQ',
-  'Entertainment': 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.latentview.com%2Fwp-content%2Fuploads%2F2023%2F04%2Funlocking-the-power-of-data-how-business-analytics-services-can-transform-your-business-featured-img-2.webp&tbnid=LBahQg3pnz0egM&vet=12ahUKEwjp74XR2J2AAxWuqGMGHfpiCqcQMygJegUIARCsAQ..i&imgrefurl=https%3A%2F%2Fwww.latentview.com%2Fcategory%2Fbusiness-analytics%2F&docid=9Vol-eg3KIcREM&w=882&h=576&itg=1&q=Business%20Category%20News%20Image&ved=2ahUKEwjp74XR2J2AAxWuqGMGHfpiCqcQMygJegUIARCsAQ',
-  'Health': 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia-cldnry.s-nbcnews.com%2Fimage%2Fupload%2Ft_focal-758x379%2Cf_auto%2Cq_auto%3Abest%2Frockcms%2F2022-11%2F221130-stock-doctor-talk-patient-ew-1221p-c1f1a2.jpg&tbnid=fyRBepZuipkjqM&vet=12ahUKEwjjk46e2Z2AAxUK5TgGHRYfAXUQMygRegUIARChAg..i&imgrefurl=https%3A%2F%2Fwww.nbcnews.com%2Fhealth%2Fhealth-care&docid=-AS2jnQ3o3aYyM&w=758&h=379&q=Health%20News%20Image&ved=2ahUKEwjjk46e2Z2AAxUK5TgGHRYfAXUQMygRegUIARChAg',
-  'Science' : 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia-cldnry.s-nbcnews.com%2Fimage%2Fupload%2Ft_focal-758x379%2Cf_auto%2Cq_auto%3Abest%2Frockcms%2F2022-11%2F221130-stock-doctor-talk-patient-ew-1221p-c1f1a2.jpg&tbnid=fyRBepZuipkjqM&vet=12ahUKEwjjk46e2Z2AAxUK5TgGHRYfAXUQMygRegUIARChAg..i&imgrefurl=https%3A%2F%2Fwww.nbcnews.com%2Fhealth%2Fhealth-care&docid=-AS2jnQ3o3aYyM&w=758&h=379&q=Health%20News%20Image&ved=2ahUKEwjjk46e2Z2AAxUK5TgGHRYfAXUQMygRegUIARChAg',
-  'Sports': 'https://static.toiimg.com/thumb/msid-73307467,width-400,resizemode-4/73307467.jpg',
+  'General': 'https://static.toiimg.com/thumb/msid-67471777,imgsize-619333,width-400,resizemode-4/67471777.jpg',
+  'Business': 'https://wallpaperaccess.com/full/1393727.jpg',
+  'Entertainment': 'https://giveitanudge.com/wp-content/uploads/2019/03/Entertainment.jpg',
+  'Health': 'https://th.bing.com/th/id/R.8406ac460d5d0a29eb4ad00354d76482?rik=KPc6I7jULHUQdg&riu=http%3a%2f%2fwww.unomaha.edu%2fcollege-of-business-administration%2fmba%2f_files%2fimages%2fhealthcare.jpg&ehk=bosV9umhL7znNujF6w4gXyGT76uRvs3mbaoOmE5EjYc%3d&risl=&pid=ImgRaw&r=0',
+  'Science' : 'https://th.bing.com/th/id/OIP.2zrB9wnFgbzw445YR6HkFwHaEc?pid=ImgDet&rs=1',
+  'Sports': 'https://th.bing.com/th/id/R.5bd0391972869105cdcf6f520827c215?rik=S5nJHKDTmtetQA&riu=http%3a%2f%2fcdn.ttgtmedia.com%2frms%2feditorial%2fsports-290px.jpg&ehk=JqI92co6MzMyS%2fnQks92KfSXTxyYnA0li2rVL3498fw%3d&risl=&pid=ImgRaw&r=0',
   'Technology' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBOOVaOsNvyvP7tUGKONViTNJ1jlOfZgmEw&usqp=CAU'
 };

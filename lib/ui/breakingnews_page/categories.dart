@@ -14,7 +14,7 @@ class Categories extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-      height: 0.5.sh,
+      height: 0.534.sh,
       width: double.infinity,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,6 +78,7 @@ class CategoryCard extends StatelessWidget {
           image: DecorationImage(
             image: NetworkImage(image),
             fit: BoxFit.cover,
+            colorFilter: ColorFilter.mode(Colors.black26, BlendMode.darken),
           ),
         ),
         child: Container(

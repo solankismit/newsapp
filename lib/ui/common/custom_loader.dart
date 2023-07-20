@@ -5,10 +5,13 @@ class CustomLoader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: CircularProgressIndicator(
-        backgroundColor: Colors.white,
-        color: Colors.blue,
+    return Container(
+      color: Colors.white,
+      child: Center(
+        child: CircularProgressIndicator(
+          backgroundColor: Colors.white,
+          color: Colors.blue,
+        ),
       ),
     );
   }
