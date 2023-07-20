@@ -8,7 +8,7 @@ import 'package:newsapp/model/getnews.dart';
 import 'package:newsapp/model/getnews.dart';
 import 'package:provider/provider.dart';
 class NewsProvider with ChangeNotifier {
-    final apiKey = '16f6f5a09b4949838791caae0b5b8138';
+    final apiKey = 'e3c5e380edb3459b8eda99aa6e8ddc17';
   String _selectedCategory = "General";
   bool _isLoading = false;
   List<Articles> _newsList = [];

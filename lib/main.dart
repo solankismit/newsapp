@@ -10,6 +10,7 @@ import 'package:provider/provider.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+
   runApp(
     MultiProvider(
       providers: [
@@ -21,7 +22,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
 
   // This widget is the root of your application.
   @override
@@ -36,24 +36,19 @@ class MyApp extends StatelessWidget {
 
       builder: (BuildContext context, Widget? child) {
         NewsProvider newsProvider = Provider.of<NewsProvider>(context);
+        newsProvider.fetchNewsAll();
         return MaterialApp(
           // title: 'Flutter Demo',
           theme: ThemeData(
             scaffoldBackgroundColor: Colors.white,
             useMaterial3: true,
           ),
-          home:  FutureBuilder(
-            future: newsProvider.fetchNewsAll(),
-            builder: (context, snapshot) {
-             return snapshot.hasData?HomePage():CustomLoader();
-            }
-          ),
+          home:  HomePage(),);
+            },
           // home: DiscoverScreen()  ,
         );
-      },
-    );
-  }
-}
+      }}
+
 
 
 

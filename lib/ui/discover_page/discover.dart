@@ -21,35 +21,33 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
   void initState() {
     super.initState();
 
-    // fetchNewsAll();
+    fetchNewsAll();
   }
 
   @override
   void dispose() {
     super.dispose();
   }
+  bool _isLoading = true;
+  Future<bool> fetchNewsAll() async {
+    final newsProvider = Provider.of<NewsProvider>(context, listen: false);
+    // newsProvider.setCategory("General");
+    // newsProvider.ChangeLoading(true);
+    await newsProvider.fetchNewsAll();
+    _isLoading = false;
+    return true;
+    // newsProvider.ChangeLoading(false);
 
-  // void fetchNewsAll() async {
-  //   final newsProvider = Provider.of<NewsProvider>(context, listen: false);
-  //   // newsProvider.setCategory("General");
-  //   // newsProvider.ChangeLoading(true);
-  //   await newsProvider.fetchNewsAll();
-  //   // newsProvider.ChangeLoading(false);
-  //
-  // }
+  }
 
   @override
   Widget build(BuildContext context) {
     final newsProvider = Provider.of<NewsProvider>(context);
     return OrientationBuilder(
       builder: (context, orientation) {
-        return FutureBuilder(
-            future: newsProvider.fetchNewsByCategory(newsProvider.selectedCategory),
-            builder: (context, snapshot) {
-              return !snapshot.hasData?
+        return  _isLoading?
             CustomLoader()
             : orientation == Orientation.portrait ? DiscoverScreenPortrait(): DiscoverScreenLandscape();
-      },);
       },
     );
   }
